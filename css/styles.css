@@ -544,6 +544,23 @@ transition: transform var(--typical-transition);
 .soc-link-footer:focus{
   background-color: #31d0aa;
 }
+
+.footer-form {
+  margin-left: auto;
+}
+.footer-input {
+  width: 260px;
+  margin: 0;
+  padding: 8px 16px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: #2e2f42;
+}
+.footer-btn {
+  padding: 8px 24px;
+  margin-left: 24px;
+}
+
 /* ...................Модальное Окно */
 .backdrop {
   position: fixed;
@@ -561,7 +578,7 @@ transition: transform var(--typical-transition);
   transition: transform var(--typical-transition);
  
   width: 408px;
-  height: 576px;
+  height: 584px;
   padding: 24px;
 
   background-color: #FCFCFC;
@@ -579,6 +596,7 @@ transition: transform var(--typical-transition);
   border-radius: 50%;
   display: block;
   margin-left: auto;
+  margin-bottom: 24px;
   color: var(--title-text-color);
   transition: color var(--typical-transition), background-color var(--typical-transition);
 }
@@ -593,4 +611,75 @@ transition: transform var(--typical-transition);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+/* ...................Форма......... */
+
+.form {
+  width: 360px;
+ margin-left: auto;
+ margin-right: auto;
+}
+b {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--title-text-color)
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+
+}
+.form-input {
+  margin: 0;
+  padding: 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  border-radius: 4px;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.167;
+  color: #8E8F99;
+}
+.form-field textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  border-radius: 4px;
+}
+.form-field textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.167;
+  color: rgba(46, 47, 66, 0.4);
+}
+.form-policy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px; 
+}
+.form-policy label{
+  font-size: 12px;
+  line-height: 1.167;
+  color: #8E8F99;
+}
+.form-policy input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+.form-btn {
+  display: inherit;
+  margin: 0 auto;
+  width: 169px;
+
 }
